@@ -18,17 +18,8 @@ browser = webdriver.Chrome(
 # Navigate to the website
 browser.get(website_url)
 
-# Find elements on the page by XPath and extract data
-# Example: Find an element by its XPath and get its text content
-
-# element = browser.find_element(
-#     By.XPATH, "//a[@class='Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title']")
-# data = element.text
-# print("Data:", data)
-
 commits = []
-elements = browser.find_elements(
-    By.XPATH, "//a[@class='Link--primary text-bold js-navigation-open markdown-title']")
+elements = browser.find_elements(By.XPATH, "//a[@class='Link--primary text-bold js-navigation-open markdown-title']")
 for element in elements:
     commit = element.text
     commits.append(commit)

@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 # Replace the following variables with the URL of the website
 # and the path to the chromedriver executable on your machine
-website_url = "https://github.com/facebook/react/issues?q=is%3Aopen+is%3Aissue"
+website_url = "https://github.com/facebook/react/issues"
 chromedriver_path = "/path/to/chromedriver"
 
 # Configure Chrome options
